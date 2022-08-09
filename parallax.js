@@ -1,7 +1,10 @@
-let parallax = document.querySelector('.parallax');
+const parallax = document.querySelector(".parallax");
+const navbar = document.querySelector(".navbar");
 
-window.onscroll = () =>{
-    let scrollTop = document.documentElement.scrollTop;
+window.onscroll = () => {
+ let scrollTop = document.documentElement.scrollTop;
 
-    parallax.style.backgroundPositionY = scrollTop * 0.7 + 'px';
-}
+ navbar.style.top = scrollTop * 0.3 + "px";
+ parallax.style.backgroundPositionY = scrollTop * 0.3 + "px";
+ console.log(scrollTop);
+};
